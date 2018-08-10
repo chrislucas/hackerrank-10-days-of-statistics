@@ -1,0 +1,31 @@
+def calc_q1(n, nums):
+    # se n for par
+    if (n & 1) == 0:
+        half = (n // 2)
+        if n > 4:
+            # se ao cortar o array na metade temos 2 metades impares
+            if (half & 1) == 1:
+                # dividimos novamente ao meio
+                t = nums[half // 2]
+                q1 = t // 2
+            # senao, pegamos o elemento na posicao de 1/4 do array e o elemento a sua direita
+            else:
+                t = nums[half // 2] + nums[half // 2 + 1]
+                q1 = t // 2
+        else:
+            # se o array tiver 2 elementos pegamos os 2 elementos mesmo
+            q1 = (nums[0] + nums[1]) // 2
+    # se a quantidade for impar
+    else:
+        half = (n // 2)
+        if n > 4:
+            # se dividirmos o array na metade e obtivermos 2 metades com quantidades impar
+            if (half & 1) == 1:
+                t = nums[half // 2]
+                q1 = t // 2
+            else:
+                t = nums[half // 2] + nums[half // 2 + 1]
+                q1 = t // 2
+        else:
+            q1 = (nums[0] + nums[1]) // 2
+    return q1
