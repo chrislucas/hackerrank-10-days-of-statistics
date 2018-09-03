@@ -1,1 +1,56 @@
 https://en.wikipedia.org/wiki/Binomial_distribution
+
+
+Funcao Massa de Probabilidade
+https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_massa_de_probabilidade
+https://en.wikipedia.org/wiki/Probability_mass_function
+FMP -> função que associa a cada variável aleatória discreta uma probabilidade
+
+A FMP associa a cada valor x do espacço amostral um valor y real positivo onde 0 <= y <= 1,
+indicando a probabilidade de um evento E resultar em x.
+
+Variavel Aleatoria
+https://pt.wikipedia.org/wiki/Vari%C3%A1vel_aleat%C3%B3ria#Defini%C3%A7%C3%A3o_informal
+
+Uma função que mapeia um resultado de um evento aleatorio. "Formalmente, uma variavel
+aleatoria e uma funcao mensuravel de um"
+Exemplo: Jogar N vez um dado de 6 lados
+
+O espaço amostral do lancamento de dados eh  {1,2,3,4,5,6} a probabilidade de cair qualquer
+1 desses numeros eh de 1/6
+
+Espaco de probabilidade
+https://pt.wikipedia.org/wiki/Espaço_de_probabilidade
+(theta, F, P)
+theta -> espaco amostral
+F -> eventos
+P -> medida de probabilidade
+
+https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_de_Bernoulli
+Seja 0 <= p <= 1
+theta = {0, 1}
+F = {vazio, {0}, {1}, {0, 1}}
+P(E) =
+P(vazio) = 0
+P({0}) = 1 - p
+P({1}) = p
+P({0, 1}) = 1
+
+
+
+Espaco amostral
+https://pt.wikipedia.org/wiki/Espa%C3%A7o_amostral
+
+
+Bernoulli Distribuition
+https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_de_Bernoulli
+https://en.wikipedia.org/wiki/Bernoulli_distribution
+
+
+Bernoulli Trials | Processo de Bernoulli
+https://en.wikipedia.org/wiki/Bernoulli_trial
+https://pt.wikipedia.org/wiki/Processo_de_Bernoulli
+
+
+Calculadora
+https://stattrek.com/online-calculator/binomial.aspx
