@@ -1,5 +1,5 @@
 https://en.wikipedia.org/wiki/Binomial_distribution
-
+https://www.mathsisfun.com/data/binomial-distribution.html
 
 Funcao Massa de Probabilidade
 https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_massa_de_probabilidade
@@ -52,5 +52,42 @@ https://en.wikipedia.org/wiki/Bernoulli_trial
 https://pt.wikipedia.org/wiki/Processo_de_Bernoulli
 
 
-Calculadora
+Calculadora de distribuicao binomial
 https://stattrek.com/online-calculator/binomial.aspx
+
+
+Curtose
+https://pt.wikipedia.org/wiki/Curtose
+
+Distribuicao de probabilidade
+https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_de_probabilidade
+
+Variaveis Aleatorias Discretas - Esperanca e Variancia
+https://www.ime.unicamp.br/~cnaber/Aula.p7_ME480_1S_2013.pdf
+
+Valor esperado
+https://pt.wikipedia.org/wiki/Valor_esperado
+https://stattrek.com/random-variable/mean-variance.aspx
+
+http://www.portalaction.com.br/probabilidades/31-valor-esperado-de-variaveis-aleatorias-discretas-e-de-vetores-discretos
+https://revisionmaths.com/advanced-level-maths-revision/statistics/expectation-and-variance
+
+Espaco de probabilidade
+https://pt.wikipedia.org/wiki/Espa%C3%A7o_de_probabilidade
+
+EP = (Omega, F, P)
+Omega => espaco amostral
+F = conjunto das possiveis subconjuntos do espaco amostral, incluindo um conjunto vazio
+P = Medida de probabilidade para cada evento E pertencente a F
+
+Exemplo: Omega {0, 1} (fracasso, sucesso) -> espaco amostral da distribuicao de bernoulli
+F = {vazio, {0},  {1}, {0, 1}}
+P = {P(vazio) = 0, P(0) = 1 - p, P(1) = p, P({0, 1}) = 1}
+
+
+https://pt.wikipedia.org/wiki/Sigma-%C3%A1lgebra
+
+FDA funcao de distribuicao acumulada
+https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_distribui%C3%A7%C3%A3o_acumulada
+http://www.portalaction.com.br/probabilidades/21-funcao-de-distribuicao-acumulada
+https://anotacoesdeaula.wordpress.com/2011/06/17/bc0405-variaveis-aleatorias/

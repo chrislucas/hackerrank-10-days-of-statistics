@@ -23,6 +23,8 @@ def fast_exp(b, e):
         return 1
     elif e == 1:
         return b
+    elif e < 0:
+        b, e = 1 / b, -e
     acc = 1
     while e > 0:
         if e & 1 == 1:
@@ -58,14 +60,38 @@ def ok_ncr(n, k):
 
 
 # https://stattrek.com/online-calculator/binomial.aspx
-def binomial_probability(n, k, prob):
-    coefficient = ok_ncr(n, k)
-    return coefficient * fast_exp(prob, k) * fast_exp(1 - prob, n - k)
+def binomial_probability(trials, k_success, prob):
+    coefficient = ok_ncr(trials, k_success)
+    return coefficient * fast_exp(prob, k_success) * fast_exp(1 - prob, trials - k_success)
 
+
+def e(n, p):
+    return n * p
+
+def variance(n, p):
+    return n * p * (1-p)
+
+def cumulative_probability():
+    return
+
+# https://www.hackerrank.com/challenges/s10-binomial-distribution-1/tutorial
+def solve_problem_tutorial():
+    print(binomial_probability(10, 5, 0.5))
+    acc = 0
+    for x in range(0, 6):
+        acc += binomial_probability(10, x, 0.5)
+    print(acc)
+    acc = 0
+    for x in range(5, 11):
+        acc += binomial_probability(10, x, 0.5)
+    print(acc)
+    return
+
+solve_problem_tutorial()
 
 print(binomial_coefficient(5, 5))
 
-print(binomial_probability(10, 15, 0.5))
+print(binomial_probability(15, 10, 0.5))
 
 if __name__ == '__main__':
     pass

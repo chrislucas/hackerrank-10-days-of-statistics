@@ -1,0 +1,14 @@
+https://www.hackerearth.com/practice/math/combinatorics/inclusion-exclusion/tutorial/
+https://www.cut-the-knot.org/arithmetic/combinatorics/InclusionExclusion.shtml
+https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle
+
+
+problems
+https://www.hackerearth.com/practice/math/combinatorics/inclusion-exclusion/practice-problems/algorithm/thl-cake1/
+https://www.hackerearth.com/practice/math/combinatorics/inclusion-exclusion/practice-problems/algorithm/gcd-on-a-tree/
+https://www.hackerearth.com/practice/math/combinatorics/inclusion-exclusion/practice-problems/algorithm/count-numbers-7/
+https://www.hackerearth.com/practice/math/combinatorics/inclusion-exclusion/practice-problems/algorithm/easy-one-4/
+
+links nao vinculados porem interessantes
+https://www.hackerearth.com/practice/math/number-theory/totient-function/tutorial/
+https://www.hackerearth.com/practice/math/number-theory/primality-tests/tutorial/
