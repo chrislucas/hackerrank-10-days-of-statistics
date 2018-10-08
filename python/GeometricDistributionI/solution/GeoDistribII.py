@@ -32,15 +32,26 @@ def solution1(tries, prob):
 
 '''
 O problema proposto eh:
+
 A probabilidade de se produzir uma peça defeituosa eh de 1/3. Qual a probabilidade
-de a primeira peça defeitusa estar entre as 5 primeias peças inspecionadas ?
+de a primeira peça defeitusa estar entre as 5 primeiras peças inspecionadas P(x <= 5) ?
 X = [1,2,3,4,5] -> pecas inspecionadas
-P(X) = 1 - (probabilidade de defeito) ^ (X - 1) * (probabilidade de defeito)
+P(X) = (1 - (probabilidade de defeito)) ^ (X - 1) * (probabilidade de defeito)
 
-Solucao proposta no forum de discussoes sem usar um loop:
+Solucao proposta no forum de discussoes sem usar um somatorio, poupando processamento:
 
+Primeiro calcula-se a probabilidade de encontrar um defeito apos as 5 inspecoes
+P(x > 5), ou seja as 5 primeiras pecas nao possuem defeito
+
+Usando a ideia de complemento (1 - p) podemos chegar a probabilidade de achar uma
+peca defeituosa nas primeiras 5 inspecoes P(x <= 5) com a formula - 1 - P(x > 5)
+
+P(x > 5) = (1 - probabilidade de sucesso) ^ 5 ou 'T'
+P(x <= 5) = 1 - T
 
 '''
+
+
 def solution2(tries, prob):
     return 1 - (fast_exp(1 - prob, tries))
 
