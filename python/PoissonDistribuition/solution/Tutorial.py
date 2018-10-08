@@ -77,7 +77,7 @@ example_2()
 '''
 Seja X uma variavel Poisson Randomico.
 
-Seja E[X] a experenca de X
+Seja E[X] a esperanca de X
 
 Seja Var(X) a variancia de X, se uma variavel aleatoria
 tiver uma distribuicao de poisson

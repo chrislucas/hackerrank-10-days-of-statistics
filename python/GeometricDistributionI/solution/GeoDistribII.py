@@ -44,9 +44,11 @@ Primeiro calcula-se a probabilidade de encontrar um defeito apos as 5 inspecoes
 P(x > 5), ou seja as 5 primeiras pecas nao possuem defeito
 
 Usando a ideia de complemento (1 - p) podemos chegar a probabilidade de achar uma
-peca defeituosa nas primeiras 5 inspecoes P(x <= 5) com a formula - 1 - P(x > 5)
+peca defeituosa dentre as 5 primeiras inspecoes P(x <= 5) com a formula: 1 - P(x > 5)
 
 P(x > 5) = (1 - probabilidade de sucesso) ^ 5 ou 'T'
+// 1 - a probabilidade das 5 pecas estarem boas (o complento nos diz 
+a probabilidade das prmeiras 5 peas estarem com defeito)
 P(x <= 5) = 1 - T
 
 '''
