@@ -21,6 +21,7 @@ C(n-1, k-1) * p^k * (1-p)^(n-k)
 
 '''
 
+
 def fast_exp(b, e):
     if e == 0:
         return 1
@@ -48,6 +49,7 @@ def fast_ncr(n, r):
 
 
 '''
+https://www.hackerrank.com/challenges/s10-geometric-distribution-1/tutorial
 Negative Binomial Distribution - nbd
 
 O experimento binomial negativo (NBE) eh um experimento com as seguintes propriedades
@@ -62,11 +64,10 @@ O experimento binomial negativo (NBE) eh um experimento com as seguintes proprie
 
 '''
 x - numero de sucessos que se quer obter
-n - numero de tentativas reaçozadas
+n - numero de tentativas realizadas
 p - probabilidade de sucesso
 '''
-
-
+# ncr(n-1, x-1) * p^x * (1-p) ^ (n-x)
 def nbd(x, n, p):
     c = fast_ncr(n - 1, x - 1)
     s = fast_exp(p, x)
@@ -79,10 +80,12 @@ s - numero de sucesso
 f - numero de fracassos
 p - probabilidade de sucesso
 '''
+
+
 def nbd_2(s, f, p):
     ss = fast_exp(p, s)
-    ff = fast_ncr(1-p, f)
-    return fast_ncr(s+f-1,s) * ff * ss
+    ff = fast_ncr(1 - p, f)
+    return fast_ncr(s + f - 1, s) * ff * ss
 
 
 if __name__ == '__main__':

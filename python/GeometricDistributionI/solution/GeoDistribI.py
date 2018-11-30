@@ -1,7 +1,9 @@
 '''
 https://www.hackerrank.com/challenges/s10-geometric-distribution-1/problem
 https://en.wikipedia.org/wiki/Negative_binomial_distribution
+DONE
 '''
+
 
 def fast_exp(b, e):
     if e == 0:
@@ -19,14 +21,14 @@ def fast_exp(b, e):
     return acc
 
 
-def fast_ncr(n, r):
-    if r > n - r:
-        r = n - r
-    acc = 1
-    for i in range(0, r):
-        acc *= (n - i)
-        acc //= (i + 1)
-    return acc
+def run():
+    p, s = map(int, input().split(" "))
+    prob = p / s
+    tries = int(input())
+    return fast_exp(1 - prob, tries - 1) * prob
+
+
+print("%.3f" % run())
 
 if __name__ == '__main__':
     pass
