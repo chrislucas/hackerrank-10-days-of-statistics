@@ -24,7 +24,6 @@ processo for realizado muitas vezes, o teorema central de limite diz que a distr
 bem proximo da distribuicao normal
 
 '''
-from math import sqrt
 
 '''
 Exemplo da wiki
@@ -44,10 +43,13 @@ v = lambda x: x ** 2
 variancia populacional
 Var[X] = E(X^2) - [E(X)] ^ 2
 '''
+
+
 def p_variance():
     return sum([x ** 2 * (1 / 6) for x in range(1, 7)]) - (sum([x / 6 for x in range(1, 7)])) ** 2
 
-def variance(n):
+
+def fn_variance(n):
     return p_variance() / n
 
 
@@ -55,16 +57,38 @@ def variance(n):
 https://www.hackerrank.com/challenges/s10-the-central-limit-theorem-1/problem
 '''
 
-
-
 # print(expected_value())
-print(p_variance())
-print(variance(6))
+# print(p_variance())
+# print(fn_variance(6))
 
-def fn(n, mean, stddev):
-    sum_mean = [x*(1/n) for x in range(0, n+1)]
-    u = n * mean
-    o = sqrt(n) * stddev
+# https://en.wikipedia.org/wiki/Normal_distribution
+# https://www.hackerrank.com/challenges/s10-normal-distribution-1/tutorial
+
+from math import pi, e, erf, sqrt
+
+
+def prob_density_normal_distrib(x, mean, variance):
+    return (1 / sqrt(2 * pi * variance)) * (e ** (-(x - mean) ** 2 / 2 * variance))
+
+
+# https://en.wikipedia.org/wiki/Normal_distribution#Cumulative_distribution_function
+# http://mathworld.wolfram.com/Erf.html
+def cumulative_distribution_function(x, mean, stddev):
+    p = 1 + erf((x - mean) / (stddev * sqrt(2)))
+    return round(0.5 * p, 4)
+
+
+def fn():
+    max_total = int(input())
+    boxes = int(input())
+    mean = int(input())
+    stddev = int(input())
+    u = boxes * mean
+    stddev2 = sqrt(boxes) * stddev
+    print(cumulative_distribution_function(max_total, u, stddev2))
+
+fn()
+
 
 if __name__ == '__main__':
     pass
